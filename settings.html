@@ -1,0 +1,92 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Настройки фармилки</title>
+	<link rel="stylesheet" type="text/css" href="css/settings.css"/>
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/settings.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="settings">
+		<h2>Настройки</h2>
+		
+		<div id="redirect" class="time_settings" sheight="120">
+			<h2>Время редиректа</h2>
+			<label>Мин. время</label> <input class="min_time" placeholder="Минимальное время">
+			<label>Диапазон</label> <input class="rand_time" placeholder="Диапазон">
+			<label>Количество м.c</label> <input class="count" placeholder="Количество миллисекунд">
+		</div>
+		
+		<div id="new_turn" class="time_settings" sheight="120">
+			<h2>Время нового хода</h2>
+			<label>Мин. время</label> <input class="min_time" placeholder="Минимальное время">
+			<label>Диапазон</label> <input class="rand_time" placeholder="Диапазон">
+			<label>Количество м.c</label> <input class="count" placeholder="Количество милисекунд">
+		</div>
+		
+		<div id="fight" class="time_settings" sheight="120">
+			<h2>Время боя</h2>
+			<label>Мин. время</label> <input class="min_time" placeholder="Минимальное время">
+			<label>Диапазон</label> <input class="rand_time" placeholder="Диапазон">
+			<label>Количество м.c</label> <input class="count" placeholder="Количество милисекунд">
+		</div>
+		
+		<div id="continue" class="time_settings" sheight="120">
+			<h2>Время завершения боя</h2>
+			<label>Мин. время</label> <input class="min_time" placeholder="Минимальное время">
+			<label>Диапазон</label> <input class="rand_time" placeholder="Диапазон">
+			<label>Количество м.c</label> <input class="count" placeholder="Количество милисекунд">
+		</div>
+		
+		<div id="sleep" class="time_settings" sheight="80">
+			<h2>Время "простоя"</h2>
+			<label>С</label> <input id="sleep_begin_time" placeholder="С">
+			<label>До</label> <input id="sleep_end_time" placeholder="До">
+		</div>
+		
+		<div id="shop" class="time_settings" sheight="180">
+			<h2>Магазин</h2>
+			<label>Ирмы</label> <input id="shop_irmas" placeholder="Ирмы">
+			<label>Бургеры</label> <input id="shop_burger" placeholder="Бургеры">
+			<label>Пироги</label> <input id="shop_pie" placeholder="Пироги">
+			<label>Шоколадки</label> <input id="shop_ration" placeholder="Шоколадки">
+			<label>Хлеб</label> <input id="shop_bread" placeholder="Хлеб">
+		</div>
+		
+		<label>Уровень</label> <input id="dinoz_level" placeholder="Уровень динозов">
+		
+		<button id="clear_time">Пересчитать время</button>
+		<button id="save_settings">Сохранить настройки</button>
+		<button id="clear_settings">Сбросить настройки</button>
+	</div>
+	
+	<div id="dinoz_block">
+		<h2>Динозы</h2>
+		
+		<div>
+			<input id="dinoz" placeholder="Id диноза"/>
+			<button id="add_dinoz">Добавить</button>
+			<button id="remove_dinoz">Удалить</button>
+		</div>
+		<div>
+			<h2>Список динозов</h2>
+			<table id="dinoz_list">
+				<thead>
+					<tr>
+						<td>Id</td>
+						<td>Ходы</td>
+						<td>Потери</td>
+						<td>Деньги</td>
+						<!--<td>Удалить</td>-->
+					</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+			<button id="clear_dinoz">Очистить список</button>
+			<button id="clear_stats">Сбросить статистику</button>
+		</div>
+	</div>
+</body>
+</html>
